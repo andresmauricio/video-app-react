@@ -1,12 +1,13 @@
-body {
-    margin: 0;
-    background-color: #141414;
-    font-family: "Nunito", sans-serif;
-    width: 100%;
-    /* overflow-x: hidden; */
-  
-  }
+@import './Vars.scss';
 
-  *{
-      box-sizing: border-box;
-  }
+body {
+  margin: 0;
+  background-color: $main-color;
+  font-family: $font;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+* {
+  box-sizing: border-box;
+}
