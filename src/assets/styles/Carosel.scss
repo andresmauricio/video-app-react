@@ -1,0 +1,15 @@
+.carosel {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.carosel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
