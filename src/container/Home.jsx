@@ -1,10 +1,8 @@
 import React from 'react';
-import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carosel from '../components/Carosel';
 import CaroselItem from '../components/CaroselItem';
-import Footer from '../components/Footer';
 import '../assets/styles/App.scss';
 
 import useInitialState from '../hooks/useInitialState'
@@ -14,8 +12,7 @@ const API = 'http://localhost:3000/initalState'
 const Home = () => {
   const initialState = useInitialState  (API);
   return (
-    <div className="App">
-      <Header />
+    <>
       <Search />
 
       {initialState.mylist.length > 0 && (
@@ -42,8 +39,7 @@ const Home = () => {
         </Carosel>
       </Categories>
 
-      <Footer />
-    </div>
+    </>
   );
 };
 
