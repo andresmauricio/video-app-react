@@ -1,12 +1,15 @@
 import React from 'react';
-import '../assets/styles/Header.scss'
-import logo from '../assets/statics/logo.png'
-import userIcon from '../assets/statics/user.svg'
+import { Link } from 'react-router-dom';
+import '../assets/styles/Header.scss';
+import logo from '../assets/statics/logo.png';
+import userIcon from '../assets/statics/user.svg';
 
 const Header = () => (
   <header className="header">
     <div className="header__brand">
-      <img className="header__img" src={logo} alt="Logo principal" />
+      <Link to="/">
+        <img className="header__img" src={logo} alt="Logo principal" />
+      </Link>
       <h2>Video App</h2>
     </div>
     <section className="header__menu">
@@ -16,10 +19,10 @@ const Header = () => (
       </div>
       <ul>
         <li>
-          <a href="inicio-sesion.html">Cuenta</a>
+          <a>Cuenta</a>
         </li>
         <li>
-          <a href="/">Cerrar Sesión</a>
+          <Link to="/login">Iniciar Sesión</Link>
         </li>
       </ul>
     </section>

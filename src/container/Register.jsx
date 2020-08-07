@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/styles/Account.scss';
+import { Link } from 'react-router-dom';
 
 const Register = () => (
   <section className="login">
@@ -15,9 +16,9 @@ const Register = () => (
         />
         <button className="button">Registrarme</button>
       </form>
-      <a className="login__container--register" href="inicio-sesion.html">
+      <Link className="login__container--register" to="/login">
         Inciar Sesión
-      </a>
+      </Link>
     </section>
   </section>
 );
