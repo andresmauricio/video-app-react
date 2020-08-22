@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useInitialState = (API) => {
-
+const useInitialState = API => {
   const [videos, setVideos] = useState({
     mylist: [],
     trends: [],
@@ -13,9 +12,8 @@ const useInitialState = (API) => {
       .then(response => response.json())
       .then(data => setVideos(data));
   }, []);
-  
-  return videos
-  
+
+  return videos;
 };
 
 export default useInitialState;

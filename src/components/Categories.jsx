@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/Categories.scss'
+import '../assets/styles/Categories.scss';
 
 const Categories = ({ children, title }) => (
   <div className="categories">
